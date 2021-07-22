@@ -1,0 +1,124 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Development' " />
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Frontend\Controllers\HomeController.cs" />
+    <Compile Remove="Frontend\Program.cs" />
+    <Compile Remove="Frontend\Startup.cs" />
+    <Compile Remove="Frontend\Models\ErrorViewModel.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.RazorAssemblyInfo.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.AssemblyInfo.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.RazorTargetAssemblyInfo.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <Compile Remove="Frontend\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Frontend\bin\Debug\netcoreapp3.1\Frontend.dll" />
+    <None Remove="Frontend\bin\Debug\netcoreapp3.1\Frontend.pdb" />
+    <None Remove="Frontend\bin\Debug\netcoreapp3.1\Frontend.Views.dll" />
+    <None Remove="Frontend\bin\Debug\netcoreapp3.1\Frontend.Views.pdb" />
+    <None Remove="Frontend\wwwroot\favicon.ico" />
+    <None Remove="Frontend\wwwroot\css\site.css" />
+    <None Remove="Frontend\wwwroot\js\site.js" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\LICENSE" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Remove="Frontend\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Remove="Frontend\wwwroot\lib\jquery\LICENSE.txt" />
+    <None Remove="Frontend\wwwroot\lib\jquery\dist\jquery.js" />
+    <None Remove="Frontend\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Remove="Frontend\wwwroot\lib\jquery\dist\jquery.min.map" />
+    <None Remove="Frontend\wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Remove="Frontend\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Remove="Frontend\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Remove="Frontend\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Remove="Frontend\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Remove="Frontend\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Remove="Frontend\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Remove="Frontend\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <None Remove="Frontend\obj\Frontend.csproj.nuget.g.props" />
+    <None Remove="Frontend\obj\Frontend.csproj.nuget.g.targets" />
+    <None Remove="Frontend\obj\project.nuget.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.RazorAssemblyInfo.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.assets.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.csproj.AssemblyReference.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.AssemblyInfoInputs.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.csproj.CoreCompileInputs.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.dll" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.pdb" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\staticwebassets\Frontend.StaticWebAssets.Manifest.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\staticwebassets\Frontend.StaticWebAssets.xml" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.TagHelpers.input.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.TagHelpers.output.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.RazorCoreGenerate.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.RazorTargetAssemblyInfo.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.Views.dll" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.Views.pdb" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.genruntimeconfig.cache" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.csproj.CopyComplete" />
+    <None Remove="Frontend\obj\Debug\netcoreapp3.1\Frontend.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Frontend\appsettings.Development.json" />
+    <Content Remove="Frontend\appsettings.json" />
+    <Content Remove="Frontend\bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+    <Content Remove="Frontend\bin\Debug\netcoreapp3.1\appsettings.json" />
+    <Content Remove="Frontend\bin\Debug\netcoreapp3.1\Frontend.deps.json" />
+    <Content Remove="Frontend\bin\Debug\netcoreapp3.1\Frontend.runtimeconfig.json" />
+    <Content Remove="Frontend\bin\Debug\netcoreapp3.1\Frontend.runtimeconfig.dev.json" />
+    <Content Remove="Frontend\Properties\launchSettings.json" />
+    <Content Remove="Frontend\obj\project.assets.json" />
+    <Content Remove="Frontend\obj\Frontend.csproj.nuget.dgspec.json" />
+    <Content Remove="Frontend\Views\_ViewImports.cshtml" />
+    <Content Remove="Frontend\Views\_ViewStart.cshtml" />
+    <Content Remove="Frontend\Views\Home\Index.cshtml" />
+    <Content Remove="Frontend\Views\Home\Privacy.cshtml" />
+    <Content Remove="Frontend\Views\Shared\Error.cshtml" />
+    <Content Remove="Frontend\Views\Shared\_Layout.cshtml" />
+    <Content Remove="Frontend\Views\Shared\_ValidationScriptsPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

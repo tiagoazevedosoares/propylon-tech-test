@@ -1,0 +1,20 @@
+﻿@model IEnumerable<DocumentViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<a asp-action="upload" asp-controller="documents">Upload Document</a>
+<h1>Documents</h1>
+
+@foreach (var document in Model)
+{
+    <p>@document.Name</p>
+    <ul>
+        @foreach (var revision in document.Revisions.OrderByDescending(d => d.CreatedDateTime))
+        {
+            <li>
+                Revision: @revision.CreatedDateTime <a asp-action="download" asp-controller="documents" asp-route-id="@document.Name" asp-route-revision="@revision.Revision">Download</a>
+            </li>
+        }
+    </ul>
+}
